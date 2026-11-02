@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html> 
+    <title>Formulário de Cadastro</title>
+    <head>
+        <body>
+            <form action="/submit" method="post">
+                <fieldset> <!--Usado para agrupar elementos do formulário-->
+                    <legend><h3>Dados Pessoais</h3></legend> <!--Legenda do fieldset/Nome que aparece acima-->
+                    <label for="nome">Nome Completo:</label> <!--Label usado para descrever o input/nome daquilo q é usado-->
+                    <input type="text" id="nome" name="nome"> <!--Input usado para inserir nesse caso o type de texto-->
+                    <br> <!--Quebra de linha-->
+                   <br><!--Quebra de linha-->
+                    <label for="data-nascimento">Data de Nascimento:</label>
+                    <input type="date" id="data-nascimento" name="data-nascimento"><!--Input usado para inserir nesse caso type data-->
+                    <br>
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"><!--Input usado para inserir nesse caso type email-->
+                 </fieldset>
+                    <br>
+                <fieldset>
+                    <legend><h3>Dados Do Curso</h3></legend>
+                    <label for="curso"><strong>Curso</strong></label>
+                    <br>
+                    <select name="curso" id="curso"> <!--Input usado para criar um menu suspenso-->
+                        <option value="informatica">Informática</option> <!--Opção de seleção para o curso de informática-->
+                        <option value="administracao">Administração</option> <!--Opção de seleção para o curso de administração-->
+                        <option value="enfermagem">Enfermagem</option> <!--Opção de seleção para o curso de enfermagem-->
+                    </select>
+
+                    <br>
+                    <br>
+
+                    <label for="periodo"><Strong>periodo</Strong></label>
+
+                    <br>
+
+                     <label for="manha">Manhã</label>
+                    <input type="radio" id="manha" name="periodo" value="manha"><!--Input usado para criar um botão de opção para a manhã-->
+                    <label for="tarde">Tarde</label> <!--Label usado para descrever o input/nome daquilo q é usado-->
+                    <input type="radio" id="tarde" name="periodo" value="tarde"><!--Input usado para criar um botão de opção para a tarde-->
+                    <label for="noite">noite</label>
+                    <input type="radio" id="noite" name="periodo" value="noite"><!--Input usado para criar um botão de opção para a noite-->
+
+                    <br>
+                    <br>
+                    <button type="submit">Enviar Cadastro</button>
+                    <h1>Atividade 2</h1>
+                    
+                </fieldset>
+            </form>
+        </body>
+    </head>
+</html>
